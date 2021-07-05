@@ -21,19 +21,19 @@ class PageLoading extends BottomNavigationState {
   String toString() => 'PageLoading';
 }
 
-class FirstPageLoaded extends BottomNavigationState {
+class SurveyLoaded extends BottomNavigationState {
   final String text;
 
-  FirstPageLoaded({required this.text});
+  SurveyLoaded({required this.text});
 
   @override
   String toString() => 'SurveyPage Loaded with text: $text';
 }
 
-class SecondPageLoaded extends BottomNavigationState {
+class TrendsLoaded extends BottomNavigationState {
   final String text;
 
-  SecondPageLoaded({required this.text});
+  TrendsLoaded({required this.text});
 
   @override
   String toString() => 'TrendsPage Loaded with text: $text';

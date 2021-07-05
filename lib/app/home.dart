@@ -57,10 +57,10 @@ class HomePage extends StatelessWidget {
           if (state is PageLoading) {
             return Center(child: CircularProgressIndicator());
           }
-          if (state is FirstPageLoaded) {
+          if (state is SurveyLoaded) {
             return Survey(text: state.text);
           }
-          if (state is SecondPageLoaded) {
+          if (state is TrendsLoaded) {
             return Trends(text: state.text);
           }
           return Container();

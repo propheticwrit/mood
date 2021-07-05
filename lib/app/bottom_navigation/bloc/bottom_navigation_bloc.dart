@@ -31,11 +31,11 @@ class BottomNavigationBloc
 
       if (this.currentIndex == 0) {
         String data = await _getSurveyData();
-        yield FirstPageLoaded(text: data);
+        yield SurveyLoaded(text: data);
       }
       if (this.currentIndex == 1) {
         String data = await _getTrendsData();
-        yield SecondPageLoaded(text: data);
+        yield TrendsLoaded(text: data);
       }
     }
   }
