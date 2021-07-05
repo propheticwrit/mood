@@ -4,6 +4,7 @@ import 'package:mood_app/app/signin/ui/sign_in.dart';
 import 'package:mood_app/services/auth.dart';
 import 'package:provider/provider.dart';
 
+import 'base.dart';
 import 'home.dart';
 
 class LandingPage extends StatefulWidget {
@@ -23,7 +24,7 @@ class _LandingPageState extends State<LandingPage> {
           if (user == null) {
             return SignInPage.create(context);
           }
-          return HomePage();
+          return BasePage();
         }
         return Scaffold(
           body: Center(
